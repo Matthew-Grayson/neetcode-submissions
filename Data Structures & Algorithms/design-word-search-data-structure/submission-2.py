@@ -30,7 +30,7 @@ class WordDictionary:
                     return False
                 else:
                     if c not in cur.children:
-                        cur.children[c] = TrieNode()
+                        return False
                     cur = cur.children[c]
             return cur.is_end
 
